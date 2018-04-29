@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.insat.ghazi.iac.Activitys.MessageActivity">
+
+
+
+<ScrollView
+    android:id="@+id/scroll_messages_activity"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:background="@color/colorEnvoyerMsg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <LinearLayout
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@color/colorEnvoyerMsg"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@color/colorEnvoyerMsg"
+                    android:src="@drawable/icon_smiley"
+                    android:id="@+id/emoticons_msg"
+                    android:text="ok"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp" />
+            </LinearLayout>
+
+            <com.rockerhieu.emojicon.EmojiconEditText
+                android:inputType="textShortMessage"
+                android:layout_weight="1"
+                android:id="@+id/taper_msg"
+                android:padding="7dp"
+                android:background="#fff"
+                android:hint="Votre message..."
+                android:textColorHint="@color/colorHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/colorEnvoyerMsg"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:background="@drawable/selector_button_cercle"
+                    android:id="@+id/envoie_msg"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_envoie_commentaire"
+                    android:layout_width="45sp"
+                    android:layout_height="45sp" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/emojicons_msg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

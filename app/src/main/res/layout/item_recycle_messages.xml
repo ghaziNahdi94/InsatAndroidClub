@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:id="@+id/date_messages"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="15/8/2009"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/anonyme"
+            android:id="@+id/photoProfil_messages"
+            app:civ_border_width="2px"
+            app:civ_border_color="#000"
+            android:layout_height="60sp"
+            android:layout_width="60sp" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/nomPrenom_messages"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:text="Prénom Nom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rockerhieu.emojicon.EmojiconTextView
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:id="@+id/texte_messages"
+                    android:text="message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:id="@+id/time_messages"
+                    android:layout_marginRight="6dp"
+                    android:text="12:30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="8dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:context="com.insat.ghazi.iac.Activitys.ProfilActivity">
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/couvertureProfilActivity"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bache2015"
+                android:layout_width="match_parent"
+                android:layout_height="160sp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="2dp"
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:id="@+id/photo_profil_activity"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="91dp" />
+
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/name_profil_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/poste_profil_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:paddingLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:text="Email : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/email_profil_activity"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:paddingLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:text="Contacter : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageButton
+                android:visibility="gone"
+                android:background="@drawable/selector_button_cercle"
+                android:id="@+id/tel_profil_activity"
+                android:src="@drawable/ic_tel"
+                android:layout_marginLeft="16dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <ImageButton
+                android:visibility="gone"
+                android:background="@drawable/selector_button_cercle"
+                android:id="@+id/sms_profil_activity"
+                android:src="@drawable/ic_message"
+                android:layout_marginLeft="16dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <ImageButton
+                android:background="@drawable/selector_button_cercle"
+                android:id="@+id/chat_profil_activity"
+                android:scaleType="center"
+                android:src="@drawable/ic_chat"
+                android:layout_marginLeft="16dp"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

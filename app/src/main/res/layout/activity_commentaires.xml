@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_commentaires"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.insat.ghazi.iac.Activitys.CommentairesActivity">
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/event_image_commentaires"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="190dp" />
+
+    </LinearLayout>
+
+
+<View
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:background="#f4fdf4"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <LinearLayout
+            android:paddingRight="10dp"
+            android:background="#f4fdf4"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <ImageView
+            android:background="#f4fdf4"
+            android:src="@drawable/icon_smiley"
+            android:id="@+id/emoticons_comm"
+            android:text="ok"
+            android:layout_width="40sp"
+            android:layout_height="40sp" />
+            </LinearLayout>
+
+        <com.rockerhieu.emojicon.EmojiconEditText
+            android:inputType="textShortMessage"
+            android:layout_weight="1"
+            android:id="@+id/taper_commentaire"
+            android:padding="7dp"
+            android:background="#fff"
+            android:hint="Votre commentaire..."
+            android:textColorHint="@color/colorHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+<LinearLayout
+    android:paddingLeft="10dp"
+    android:background="#f4fdf4"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+            <ImageButton
+                android:background="@drawable/selector_button_cercle"
+                android:id="@+id/envoie_commentaire"
+                android:scaleType="center"
+                android:src="@drawable/ic_envoie_commentaire"
+                android:layout_width="45sp"
+                android:layout_height="45sp" />
+</LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/emojicons_comm"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_commentaires"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

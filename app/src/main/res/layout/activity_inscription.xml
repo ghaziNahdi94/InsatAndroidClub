@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/insat_back"
+    tools:context="com.insat.ghazi.iac.Activitys.InscriptionActivity">
+
+
+
+
+    <ScrollView
+        android:paddingBottom="10dp"
+        android:id="@+id/login_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="16dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:maxLength="30"
+                    android:textColorHint="#fff"
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:maxLength="30"
+                    android:textColorHint="#fff"
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mot de passe"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:maxLength="30"
+                    android:digits="abcdefghijklmnopqrstuvwxyz"
+                    android:textColorHint="#fff"
+                    android:id="@+id/nom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nom"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:digits="abcdefghijklmnopqrstuvwxyz"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:maxLength="30"
+                    android:textColorHint="#fff"
+                    android:id="@+id/prenom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Prénom"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:maxLength="8"
+                    android:textColorHint="#fff"
+                    android:id="@+id/tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Numéro de téléphone"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/photo_profil_inscription"
+                        android:layout_marginRight="10dp"
+                        app:civ_border_width="0.5dp"
+                        android:src="@drawable/anonyme"
+                        android:layout_width="65sp"
+                        android:layout_height="65sp" />
+
+                    <Button
+                        android:id="@+id/button_choisirPhotoProfil_inscription"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/selector_inscription_photo_profil"
+                        android:text="Choisissez photo de profil"
+                        android:textColor="#fff"
+                        android:textAllCaps="false"
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/insatien"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:text="Je suis insatien(e)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/les_listes"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_marginRight="20dp"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:entries="@array/filiere"
+                    android:id="@+id/filliere"></Spinner>
+
+                <Spinner
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="120dp"
+                    android:entries="@array/niveau"
+                    android:layout_height="40dp"
+                    android:id="@+id/niveau"></Spinner>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:background="@drawable/selector_inscrire_button"
+                    android:textAllCaps="false"
+                    android:text="S'inscrir"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="120sp"
+                    android:layout_height="45sp"
+                    android:id="@+id/inscrireTerminer" />
+
+                <Button
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:background="@drawable/selector_login_button"
+                    android:text="Annuler"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/annulerInscrire" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

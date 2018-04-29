@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context="com.insat.ghazi.iac.Fragments.MessagesFragment">
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/scroll_recycler_messages"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </ScrollView>
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/aucun_message"
+        android:textColor="#767676"
+        android:textSize="22sp"
+        android:text="Aucun message à afficher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+</LinearLayout>

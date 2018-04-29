@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:text="Connecter avec : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageButton
+            android:scaleType="centerCrop"
+            android:background="@drawable/cercle_button_login"
+            android:id="@+id/google_login"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/google_connect"
+            android:layout_width="40sp"
+            android:layout_height="40sp" />
+
+
+
+        <ImageButton
+            android:scaleType="centerCrop"
+            android:background="@drawable/cercle_button_login"
+            android:id="@+id/facebook_login"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/facebook_connect"
+            android:layout_width="40sp"
+            android:layout_height="40sp"  />
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/emailOrTel"
+        android:layout_marginTop="40dp"
+        android:hint="Addresse email ou Numéro Tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/passwordConnecter"
+        android:layout_marginTop="10dp"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

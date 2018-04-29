@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.insat.ghazi.iac">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".Activitys.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activitys.InscriptionActivity"
+            android:label="@string/title_activity_inscription"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.MainInConnectionActivity"
+            android:label="@string/title_activity_main_in_connection"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activitys.TerminerInscriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.EventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.CommentairesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activitys.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activitys.ProfilActivity" />
+
+        <service
+            android:name=".Services.NotificationService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false" />
+
+        <receiver
+            android:name=".Services.BootReciver"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+        </receiver>
+    </application>
+
+</manifest>

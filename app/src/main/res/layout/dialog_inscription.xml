@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="match_parent">
+
+
+
+    <Button
+        android:text="Facebook"
+        android:id="@+id/facebook_inscrire"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:background="@drawable/selector_inscrire_facebook_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <Button
+        android:id="@+id/google_inscrire"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_login_button"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:text="Google"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_inscrire_button"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:text="Manuellement"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/manuelle_inscrire" />
+
+
+
+</LinearLayout>

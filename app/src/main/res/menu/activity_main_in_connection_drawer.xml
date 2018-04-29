@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+
+
+        <item
+            android:id="@+id/nav_actualite"
+            android:icon="@drawable/ic_actualite"
+            android:title="Actualité" />
+
+        <item
+            android:id="@+id/nav_liste_staff"
+            android:icon="@drawable/ic_contacter_staff"
+            android:title="Contacter un staff" />
+
+        <item
+            android:id="@+id/nav_contacter_membre"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Contacter un membre" />
+
+        <item
+            android:id="@+id/nav_parametre"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Paramétres"/>
+
+    </group>
+
+
+    <item android:title="Compte" android:id="@+id/compte">
+
+<menu>
+<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_profil"
+            android:title="Profil" />
+
+    <item
+        android:id="@+id/nav_message"
+        android:icon="@drawable/ic_chat_noire"
+        android:title="Messages" />
+
+
+        <item
+            android:id="@+id/nav_deconnexion"
+            android:icon="@drawable/ic_deconnexion"
+            android:title="Déconnexion" />
+</group>
+
+</menu>
+</item>
+
+
+</menu>

@@ -1,0 +1,104 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context="com.insat.ghazi.iac.Activitys.EventActivity"
+    >
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/event_image"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="190dp" />
+
+        </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/event_titre"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#008B8B"
+                android:text="Titre de l'venement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/event_description"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:text="Titre de l'venement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/commentaire_button"
+            android:src="@drawable/ic_commentaire"
+            android:background="@drawable/selector_button_cercle"
+            android:layout_width="60sp"
+            android:layout_height="60sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+    </LinearLayout>
+

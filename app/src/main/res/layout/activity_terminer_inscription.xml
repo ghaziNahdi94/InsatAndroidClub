@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/insat_back"
+    tools:context="com.insat.ghazi.iac.Activitys.TerminerInscriptionActivity">
+
+
+
+
+    <ScrollView
+        android:paddingBottom="10dp"
+        android:id="@+id/login_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="16dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:maxLength="8"
+                    android:textColorHint="#fff"
+                    android:id="@+id/tel_terminerInscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Numéro de téléphone"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/insatien_terminerInscription"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:text="Je suis insatien(e)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/les_listes_inscriptionTerminer"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_marginRight="20dp"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/filliere_terminerInscription"></Spinner>
+
+                <Spinner
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="120dp"
+                    android:entries="@array/niveau"
+                    android:layout_height="40dp"
+                    android:id="@+id/niveau_terminerInscription"></Spinner>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:background="@drawable/selector_inscrire_button"
+                    android:textAllCaps="false"
+                    android:text="Terminer"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/inscrire_TerminerInscription" />
+
+                <Button
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:background="@drawable/selector_login_button"
+                    android:text="Annuler"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/annulerInscrire_terminerInscription" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
+

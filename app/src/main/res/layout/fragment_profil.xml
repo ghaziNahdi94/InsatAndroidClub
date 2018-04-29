@@ -1,0 +1,220 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.insat.ghazi.iac.Fragments.ProfilFragment"
+    android:orientation="vertical">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/couvertureProfil"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bache2015"
+        android:layout_width="match_parent"
+        android:layout_height="160sp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_width="2dp"
+        android:src="@drawable/anonyme"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:id="@+id/photo_profil_fragment"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp" />
+
+
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name_profil_fragment"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/poste_profil_fragment"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:text="Email : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/email_profil_fragment"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:text="Modifier : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <ImageButton
+            android:background="@drawable/selector_button_cercle"
+            android:id="@+id/modifier_profil_fragment"
+            android:scaleType="center"
+            android:src="@drawable/ic_modifier"
+            android:layout_marginLeft="36dp"
+            android:layout_width="50sp"
+            android:layout_height="50sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+<LinearLayout
+    android:id="@+id/menu_profil"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#c61313"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:text="Modifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/fermer_menuProfil"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_croix"
+            android:layout_width="30sp"
+            android:layout_height="30sp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/modif1"
+        android:layout_marginTop="7dp"
+        android:textColor="#000"
+         android:gravity="center"
+        android:textSize="20sp"
+        android:text="Photo de profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"/>
+    <View
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/modif2"
+        android:layout_marginTop="7dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Photo de couverture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        />
+    <View
+        android:id="@+id/view_modif3"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <TextView
+        android:id="@+id/modif3"
+        android:layout_marginTop="7dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Mot de passe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        />
+
+
+
+
+</LinearLayout>
+
+
+</RelativeLayout>
